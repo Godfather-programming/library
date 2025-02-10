@@ -1,11 +1,19 @@
 
 import books from "./constants/mockData"
+import Layout from "./layouts/layout";
+import Regular from "./Regular";
+import Search from "./Search";
 
 function App() {
   return (
     <>
-      <h1>Book App Starting files</h1>
-      {books.map(book => <p> {book.title} </p>) } 
+     <Layout>
+     <Search />
+     <Regular /> 
+
+
+     </Layout>
+
        </>
   );
 }
